@@ -43,7 +43,12 @@ app.get('/logo.svg', (req, res) => {
 app.post('/razorpay', async (req, res) => {
     if (req.body.courseId && req.body.qty) {
         const idToPrices = {
-            "mcLd9L85pFBPJKAk8DpC": 10000,
+            "mcLd9L85pFBPJKAk8DpC": 3000,
+            "NlLC5EsHWiqqvNwBxLN4": 15000,
+            "SJUKcfdOIuVuek1a6chP": 10000,
+            "k4FgJhYAJPNSGiKY8PzB": 5000,
+            "rCRS4BMyulwxOFFdiLxF": 20000,
+            "wTpFWHqqKdWmIyS9GVSA": 15000
         };
         const payment_capture = true;
         const amount = idToPrices[req.body.courseId];
